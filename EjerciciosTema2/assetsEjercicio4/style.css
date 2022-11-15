@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "MiMenu";
+  src: url("menu.woff");
+}
+body {
+  background-color: #d3d3d3;
+}
+[class^="icon-"],
+[class*="icon-"] {
+  margin-right: 3px;
+  font-family: "Mimenu";
+  font-style: normal;
+}
+.lista1 {
+}
+.lista1 li {
+  text-decoration: solid;
+  border: dashed #954a95 6px;
+  font-weight: bold;
+  display: inline;
+  background-color: #5ace77;
+  padding: 10px 40px;
+  margin: 5px;
+}
+.lista2 {
+  margin-right: 100px;
+  float: right;
+}
+.lista2 li {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px 10px;
+  text-decoration: none;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+  display: inline;
+  background-color: white;
+  padding: 8px 12px;
+  
+  font-size: 0.9em;
+}
+.lista3 {
+  border: 1px solid black;
+  width: 7%;
+  padding: 10px;
+}
+.lista3 li {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  list-style: none;
+  text-decoration: none;
+  border: solid black 1px;
+  background-color: white;
+  padding: 10px;
+  margin:5px;
+}
+.lista4 {
+  float: right;
+  margin-right: 100px;
+}
+.lista4 li{
+  color: #3366CC;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1px;
+  text-decoration: none;
+  display: inline;
+  background-color: white;
+  padding: 8px 23px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.lista4 .par{
+  color: white;
+  background-color: #3366CC;
+}
+.lista5 {
+}
+.lista5 li{
+  display: inline;
+  text-decoration: none;
+  padding-left: 15px;
+}
+.lista6 {
+  text-align: right;
+  margin: 150px
+}
+.lista6 li{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.8em;
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid black;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15%;
+  margin-right: 20px;
+}
+.icon-inicio::before {
+  content: "\e900";
+}
+.icon-anadir::before {
+  content: "\ea0a";
+}
+.icon-listar::before {
+  content: "\e922";
+}
+.icon-borrar::before {
+  content: "\ea0b";
+}
+.icon-buscar::before {
+  content: "\e986";
+}
+.icon-modificar::before {
+  content: "\e905";
+}
+.icon-salir::before {
+  content: "\e9b6";
+}
