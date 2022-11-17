@@ -10,14 +10,13 @@
       }
       body {
         background-color: #b52000;
-        font-family: 'dancing-script';
         padding:20px;
       }
       p {
         background-color: black;
         color: white;
         border-radius: 15px;
-        padding: 15px;
+        padding: 8px;
       }
       #titulo {
         font-family: 'Times New Roman', Times, serif;
@@ -25,15 +24,57 @@
         letter-spacing: 0.4em;
       }
       #cita{
+        
+        font-family: 'dancing-script';
         background-color: #ffffff;
         position: fixed;
+        width: 250px;
         top: 0;
         right: 0;
         color: black;
         border-radius: 0%;
+        text-align: right;
       }
       #autor{
         font-family: 'Times New Roman', Times, serif;
+      }
+      #noInherit{
+        background-color: #b52000;
+      }
+      .color-black{
+        color: black;
+        font-size: 1.4em;
+        font-weight: bold;
+        text-decoration: solid;
+      }
+      .color-red{
+        color: red;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-decoration: solid;
+      }
+      .color-yellow{
+        color:yellow;
+      }
+      .color-green{
+        color:green;
+      }
+      .fechas{
+        background-color: #ffffff;
+      }
+      .indentLeft{
+        
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        margin-right: 150px;
+      }
+      .indentRight{
+        
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        margin-left: 150px;
       }
     </style>
   </head>
@@ -43,60 +84,63 @@
       Es maravilloso que nadie tenga que esperar nada para  empezar a mejorar el
       mundo<br />
       <b id="autor">Ana Frank (Diario de una adolescente)</b>
-    <div></p>
-    <p>
-      Amsterdam, según la pronunciación etimológica (Acerca de este sonido
-      Amsterdam [ɑmstər'dɑm]), es la capital oficial de los Países Bajos.
     </p>
+    <p id="noInherit">
+      <span class="color-black">Amsterdam</span>, según la pronunciación etimológica (Acerca de este sonido
+      Amsterdam[ɑmstər'dɑm]), es la capital oficial de los Países Bajos.
+    </p>
+    <div class="indentLeft">
     <p>
-      Amsterdam. Tiene una población de unos 810 000 habitantes y en su área
+      <span class="color-red">Amsterdam</span> Tiene una población de unos 810 000 habitantes y en su área
       metropolitana residen aproximadamente 1,5 millones. Cabe destacar que
-      Ámsterdam forma parte de la gran conurbación neerlandesa llamada Randstad
+      Ámsterdam forma parte de la gran conurbación neerlandesa llamada <span class="color-green">Ranstad</span>
       (junto con las ciudades de La Haya, Róterdam y Utrecht), que cuenta con
       más de 6,5 millones de habitantes. Este núcleo es una de las conurbaciones
-      más grandes de Europa
+      más grandes de <span class="color-green">Amsterdam</span>
     </p>
-  </div>
-  <div>
     <p>
-      Amsterdam. En Europa el primer rascacielos fue el Witte Huis construido en
-      Róterdam, Países Bajos, en 1898 en estilo Art Nouveau con 43 metros y 10
-      pisos. En 1911 se construyó el Royal Liver Building en Liverpool, Reino
-      Unido, de 90 metros y 13 pisos, considerado uno de los primeros
+      <span class="color-red">Amsterdam</span> En <span class="color-green">Europa</span> el primer rascacielos fue el Witte Huis construido en
+      <span class="color-green">Róterdam</span>, Países Bajos, en 1898 en estilo Art Nouveau con 43 metros y 10
+      pisos. En 1911 se construyó el Royal Liver Building en <span class="color-green">Liverpool, Reino unido</span>, de 90 metros y 13 pisos, considerado uno de los primeros
       rascacielos construidos completamente en hormigón
     </p>
+  </div>
+<div class="indentRight">
     <p>
       El centro histórico de la ciudad fue construido en gran parte en el siglo
       XVII y es hoy en día uno de los centros históricos más grandes de Europa.
       En aquella época se construyeron una serie de canales semicirculares
       alrededor del casco antiguo ya existente de la ciudad.
     </p>
-    </div>
-    <div>
     <p>
-      El primer uso documentado del término «Amsterdam» aparece en un
+      El primer uso documentado del término <span class="color-red">Amsterdam</span> aparece en un
       certificado del 27 de octubre de 1275, en que los habitantes, que habían
       construido un puente con una presa (dam en neerlandés) sobre el río
       Amstel, quedaban exentos de pontazgo por orden del conde Florentino V.
     </p>
-    <p>
-      El certificado, en latín, describe a los habitantes como homines manentes
-      apud Amestelledamme («personas que viven cerca de Amestelledamme». En
-      1327, el nombre ya había evolucionado a Aemsterdam.
-    </p>
+    
+  </div>
+    <div class="indentLeft">
+      <p>
+        El certificado, en latín, describe a los habitantes como homines manentes
+        apud Amestelledamme («personas que viven cerca de Amestelledamme». En
+        1327, el nombre ya había evolucionado a Aemsterdam.
+      </p>
     <p>
       En neerlandés la pronunciación del nombre es aguda: [ɑmstər'dɑm]. Sin
       embargo, en español está muy extendida la pronunciación esdrújula, por lo
       que la ASALE recomienda la grafía Ámsterdam, con tilde.
     </p>
-  </div>
-  <div>
+  
+  
     <p>
       En torno al siglo XIII Ámsterdam era un pueblo de pescadores. Según las
       leyendas, la ciudad fue fundada por dos pescadores de la provincia norteña
       de Frisia, que por casualidad acabaron en las orillas del río Amstel en un
       barquito, junto a su perro.[cita requerida]
     </p>
+  </div>
+    <div class="indentRight">
     <p>
       La fecha tradicional de la fundación de la ciudad es el día 27 de octubre
       del año 1275, cuando a sus habitantes se les retiró la obligación de pagar
