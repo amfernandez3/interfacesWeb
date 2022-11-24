@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            margin-left: 43px;
+            margin-top: 30px;
+        }
+        h2{
+            color: white;
+            width: 60px;
+            margin-left: 101px;
+            margin-top: -30px;
+        }
+        .recuadro{
+            background-color: rgb(37, 37, 37);
+            width: 1000px;
+            height: 95%;
+            border-radius: 10px;
+            margin: 0 auto;
+            box-shadow: 26px 27px 13px grey;
+        }
+        .formularios{
+            display: flex;
+            color: white; 
+            justify-content: center;
+        }
+        fieldset{
+            border-radius: 5px;
+        }
+        .field1{
+            width: 400px;
+        }
+        .field2{
+            width: 230px;
+        }
+        .field3{
+            width: 230px;
+        }
+
+        .div1>input{
+            margin-bottom: 10px;
+        }
+        #p{
+            margin-bottom: 0px;
+        }
+        textarea{
+            color: black;
+        }
+        button{
+            background-color: olive;
+            padding: 10px;
+            border-radius: 15px;
+            margin-left: 65%;
+            margin-bottom: 15px;
+            margin-top: 5px;
+            color: white;
+        }
+        .div1>div{
+            width: 100%;
+            margin: 0;
+        }
+        #sexf{
+            margin-left: 46px;
+        }
+        .direccion{
+            display: flex;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <div class="recuadro">
+            <div>
+                <img src="img.jpg" width="48" height="48">
+                <h2>Perfil</h2>
+            </div>
+            
+            <div class="formularios">
+                <fieldset class="field1">
+                    <legend>Datos</legend> 
+                    <div class="div1">
+                        <div>
+                            <label>Fecha de nacimiento:</label>
+                            <input type="date" id="fecha" name="fecha">
+                        </div>
+                        
+                        <br>
+
+                        <div>
+                            <label>Ingrese su foto:</label>
+                            <input type="file" id="archivo" name="archivo">
+                        </div>
+                        
+                        <br>
+
+                        <div>
+                        <label>Nacionalidad:</label>
+                        <input type="text" id="text" name="text">
+                        </div>
+                        
+                        <br>
+
+                        <div>
+                        <label>Color favorito:</label>
+                        <input type="color" id="color" name="color">
+                        </div>
+                        
+                        <br>
+
+                        <div>
+                        <label>Sexo:</label>
+                        
+                            <input type="radio" id="sexm" name="sexo" value="masc" checked><label>Masculino</label><br>
+                            <input type="radio" id="sexf" name="sexo" value="fem"><label>Femenino</label>
+                        
+                        
+                        </div>
+                        
+                        <br>
+
+                        <div class="direccion">
+                        <label>Dirección:</label>
+                        <textarea id="area" name="area" rows="4" cols="20"></textarea>
+                        </div>
+                        
+                    </div>
+                </fieldset>
+
+                <fieldset class="field2">
+                    <legend>Temas</legend> 
+                    <div>
+                        <p>Elija tema de interés:</p>
+                        <input type="radio" id="ciencia" name="ciencia" value="fem" checked><label>Ciencia</label>
+                        <br>
+                        <input type="radio" id="arte" name="arte" value="fem"><label>Arte</label>
+                        <br>
+                        <input type="radio" id="literatura" name="literatura" value="fem"><label>Literatura</label>
+                        <br>
+                        <input type="radio" id="tecnologia" name="tecnologia" value="fem"><label>Tecnología</label>
+                        <br>
+                        <input type="radio" id="musica" name="musica" value="fem"><label>Música</label>
+                        <br>
+                        <input type="radio" id="indivatica" name="indivatica" value="fem"><label>Informática</label>
+                        <br>
+                        <p id="p">Libros y artículos de tu interes:</p>
+                        <textarea id="area2" name="area2" rows="4" cols="20" 
+                            placeholder="macarrones con queso&#10;cocacolas adobadas&#10;pizza con anchoas&#10;chorizo de calabaza"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset class="field3">
+                    <legend>Aficiones</legend> 
+                    <div>
+                        <p>Elija su pasatiempo:</p>
+                        <input type="checkbox" id="deporte" name="deporte" value="deporte" checked>
+                        <label for="deporte">Deporte</label><br>
+
+                        <input type="checkbox" id="musica" name="musica" value="musica">
+                        <label for="musica">Música</label><br>
+
+                        <input type="checkbox" id="lectura" name="lectura" value="lectura">
+                        <label for="lectura">Lectura</label><br>
+
+                        <input type="checkbox" id="pesca" name="pesca" value="pesca">
+                        <label for="pesca">Pesca</label><br>
+
+                        <input type="checkbox" id="pasear" name="pasear" value="pasear">
+                        <label for="pasear">Pasear</label><br>
+
+                        <input type="checkbox" id="cine" name="cine" value="cine">
+                        <label for="vcine">Cine</label><br>
+                    </div>
+                </fieldset>
+            </div>
+            <button type="submit" form="form" value="Submit">Enviar información</button>
+        </div>
+    </form>
+</body>
+</html>

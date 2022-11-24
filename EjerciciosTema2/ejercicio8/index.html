@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @font-face {
+            font-family: "MiMenu";
+            src: url("./assetsEjercicio8/LigatureSymbols-2.11.woff");
+        }
+
+        [class^="icon-"], [class*="icon-"] {
+            margin-right: 3px;
+            font-family: "Mimenu";
+            font-style: normal;
+            font-size: calc(130%);
+            margin-right: 20px;
+        }
+        .icon-usuario::before {
+            content: "\E137";
+        }
+        .icon-contra::before {
+            content: "\E086";
+        }
+        .icon-face::before {
+            content: "\E047";
+            float: left;
+        }
+        .icon-twitt::before {
+            content: "\E12f";
+        }
+
+        body{
+            background-color: #294072;
+        }
+        .recuadro{
+            width: 500px;
+            margin: 0 auto;
+            background-color: #1c2b4a;
+        }
+        h2{
+            background-color: #17233b;
+            text-align: center;
+            color: white;
+            padding: 15px;
+        }
+        form{
+            margin-left: 7.5%;
+            margin-right: 7.5%;
+            width: 85%;
+        }
+        .inpt{
+            width: 98%; 
+            margin-bottom: 10px;
+            background-color: #12192c;
+            color: white;
+        }
+        .boton{
+            width: 100%;
+            background-color: #00cc66;
+            border-radius: 2px;
+            border-style: none;
+            padding: 10px;
+            margin-bottom: 10px; 
+        }
+        .boton>a{
+            text-decoration:none;
+            color: white;
+            font-size: 25px;
+        }
+        .face{
+            /*width: 45%;*/
+            background-color: #3b5a9a;
+            color: white;
+            border-radius: 2px;
+            border-style: none;
+            padding: 7px;
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+        .twitt{
+            width: 45%;
+            background-color: #2ca8d2;
+            color: white;
+            border-radius: 2px;
+            border-style: none;
+            padding: 7px;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            float:right;
+        }
+        .container{
+            color: white;
+        }
+        .contra{
+            color: white;
+            text-decoration:none;
+            float:right;
+        }
+        .footer{
+            background-color: #17233b;
+            height:70px;
+            margin-top: 10px;
+        }
+        .cuenta{
+            color: white;
+            text-decoration:none;
+            position: relative;
+            top: 30%;
+            left: 7.5%;
+        }
+        .registrate{
+            float: right;
+            border-radius: 2px;
+            border-style: none;
+            background-color: #009966;
+            color: white;
+            padding: 15px;
+            text-decoration:none;
+            margin: 10px;
+            margin-right: 7.5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="recuadro">
+        <h2>Inicio de sesión</h2>
+
+        <form>
+            <input type="text" class="inpt icon-usuario" id="name" name="name" placeholder="&#xE137; Nombre de usuario">
+            <br>
+            <input type="text" class="inpt icon-contra" id="contra" name="contra" placeholder="&#xE086; Contraseña">
+            <br>
+            <button class="boton"><a href="perfil.html">Iniciar sesion</a></button>
+            <label class="container">
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+                Recordarme
+            </label>
+            <a class="contra "href="">¿Has olvidado tu contraseña?</a>
+            <button class="face"><i class="icon-face"></i>Loguearme con Facebook</button>
+            <button class="twitt"><i class="icon-twitt"></i>Loguearme con Twitter</button>
+        </form>
+        <div class="footer">
+            <a class="cuenta" href="">¿No tienes cuenta?</a>
+            <a class="registrate" href="registro.html">Registrate</a>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>

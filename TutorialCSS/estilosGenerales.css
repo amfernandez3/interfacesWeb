@@ -1,0 +1,25 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    font-size: 1em;
+    color: black;
+    display: flex;
+    background-color: aquamarine;
+    height: 5vw;
+
+}
+
+nav>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+}
+nav>ul>li{
+    color: black;
+    font-size: bold;
+    text-decoration: none;
+    padding: 5px;
+}

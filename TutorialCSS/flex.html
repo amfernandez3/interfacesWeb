@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./estilosGenerales.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .apartado{
+            font-size: 1.3em;
+        }
+        .ejemploFlex{
+            display: flex;
+            justify-content: center;
+        }
+        .ejemploFlex>p{
+            display: flex;
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            margin: 2px;
+            border: solid 1px black;
+            /* Para centrar el contenido*/
+            justify-content: center;
+            align-items: center;
+        }
+        #tituloFlexEjemplos{
+            text-align: center;
+        }
+    </style>
+    <title>Apuntes: FLEX</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">INICIO</a></li>
+            <li><a href="./modeloCajas.html">MODELO CAJAS</a></li>
+            <li><a href="./flex.html">FLEX</a></li>
+            <li><a href="./selectores.html">SELECTORES</a></li>
+            <li><a href="./medios.html">MEDIOS</a></li>
+            <li><a href="./unidadesMedida.html">MEDIDAS</a></li>
+        </ul>
+    </nav>
+    <h2 style="text-align: center;"></h2>
+    <p class="apartado">Centrar elementos:</p>
+    <p></br>-justify-content:center/left/space-between,  </br>-align-items: center</p>
+    <p class="apartado">Dirección de los elementos (2 ejes):</p>
+    <p></br>-flex-direction: row/column/row-reverse...</p>
+    <p class="apartado">Desbordamiento</p>
+    <p></br>-flex-wrap: nowrap/wrap/wrap-reverse</p>
+    
+    <h3 id="tituloFlexEjemplos">Ejemplos FLEX</h3>
+    <div class="ejemploFlex">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+    </div>
+    
+</body>
+</html>

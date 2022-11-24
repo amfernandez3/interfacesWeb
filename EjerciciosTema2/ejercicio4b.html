@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        table{
+            margin: auto;
+        }
+        #primera>tr>:first-child{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            background-color:  rgb(207, 64, 12);
+            box-shadow: 0.5px 0.5px 3px rgb(9, 9, 9);
+            color: white;
+
+        }
+        #primera>tr:not(:first-child)>td:not(:first-child) {
+            border: 1px solid;
+        }
+        .tr1>td{   
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(207, 64, 12);
+            box-shadow: 0.5px 0.5px 3px rgb(9, 9, 9);
+        }
+        #primera>tr>td{
+            text-align: center;
+        }
+        
+        #primeraTablaTitulo{
+            color:  rgb(207, 64, 12);
+            font-size: 25px;
+        }
+        #primeraTabla{
+            background-color: rgb(211, 209, 209);
+            border: 1px solid;
+        }
+        tr{
+            font-size: 1 em;
+        }
+
+
+
+        #segunda>tr>:first-child{
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 5px;
+            color: white;
+            /*REVISAR colores fondo y shadow (bajar)*/
+            box-shadow: 0.5px 0.5px 3px rgb(9, 9, 9);
+           
+
+        }
+        #segunda>tr>:first-child{
+            background-color: rgb(182, 179, 179);
+            color: white;
+        }
+        #tr2{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1em;
+            background-color: rgb(182, 179, 179);
+            color: white;
+            box-shadow: 0.5px 2px 2px rgb(9, 9, 9);
+        }
+        #segundaTablaTitulo{
+            margin-top: 20px;
+            color: rgb(195, 191, 191);
+            font-size: 25px;
+        }
+        #segunda>tr>td:not(:first-child){
+            text-align: right;
+        }
+        #segundatabla{
+            margin-top: 20px;
+            border: 4px solid rgb(207, 202, 202);
+        }
+        #segunda>tr>td:not(:first-child){
+            width: 75px;
+        }
+
+        #segunda>tr:not(:first-child):nth-child(even)>td:not(:first-child) {
+             background: rgb(217, 217, 217); 
+             font-family: 'Times New Roman', Times, serif;
+            }
+        #segunda>tr:not(:first-child):nth-child(odd)>td:not(:first-child) { 
+            background: rgb(242, 239, 239);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+       
+
+
+    </style>
+</head>
+<body>
+    
+<table id="primeraTabla" cellspacing="14px">
+    <caption id="primeraTablaTitulo">Título de la tabla</caption>
+    <tbody id="primera">
+        <tr class="tr1">
+            <td>...</td>
+            <td>Columna 1</td>
+            <td>Columna 2</td>
+            <td>Columna 3</td>
+        </tr>
+        <tr>
+            <td>Fila1 1</td>
+            <td>celda 11</td>
+            <td>celda 12</td>
+            <td>celda 13</td>
+        </tr>
+        <tr>
+            <td>Fila2 </td>
+            <td>celda 21</td>
+            <td>celda 22</td>
+            <td>celda 23</td>
+        </tr>
+        <tr>
+            <td>Fila 3</td>
+            <td>celda 31</td>
+            <td>celda 32</td>
+            <td>celda 33</td>
+        </tr>
+    </tbody>
+</table>
+
+<table id="segundaTabla">
+    <caption id="segundaTablaTitulo">Indice de Precios de Consumo</caption>
+    <tbody id="segunda">
+        <tr id="tr2">
+            <td></td>
+            <td>2012M03</td>
+            <td>2012M02</td>
+            <td>2012M01</td>
+            <td>2012M03</td>
+            <td>2012M02</td>
+            <td>2012M01</td>
+        </tr>
+        
+        <tr>
+            <td>General</td>
+            <td>101,055</td>
+            <td>150,38</td>
+            <td>106,775</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Alimentos y bebidas</td>
+            <td>141,025</td>
+            <td>1450,28</td>
+            <td>00,275</td>
+            <td>7,8</td>
+            <td>22,3</td>
+            <td>-7,5</td>
+        </tr>
+        
+        <tr>
+            <td>Alcohólicas y tabaco</td>
+            <td>161,05</td>
+            <td>100,38</td>
+            <td>109,75</td>
+            <td>1,7</td>
+            <td>2,6</td>
+            <td>5,1</td>
+        </tr>
+        
+        <tr>
+            <td>Vestido y calzado</td>
+            <td>101,067</td>
+            <td>160,38</td>
+            <td>150,75</td>
+            <td>0,8</td>
+            <td>2,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Vivienda</td>
+            <td>101,025</td>
+            <td>190,38</td>
+            <td>120,255</td>
+            <td>01,74</td>
+            <td>0,13</td>
+            <td>-1,5</td>
+        </tr>
+        
+        <tr>
+            <td>Menaje</td>
+            <td>102,45</td>
+            <td>140,38</td>
+            <td>100,275</td>
+            <td>0,74</td>
+            <td>40,1</td>
+            <td>13,1</td>
+        </tr>
+        
+        <tr>
+            <td>Medicina</td>
+            <td>131,055</td>
+            <td>80,48</td>
+            <td>100,45</td>
+            <td>0,9</td>
+            <td>9,1</td>
+            <td>11,12</td>
+        </tr>
+        
+        <tr>
+            <td>Transporte</td>
+            <td>101,5</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Comunicaciones</td>
+            <td>141,055</td>
+            <td>10,38</td>
+            <td>100,245</td>
+            <td>0,4</td>
+            <td>4,1</td>
+            <td>6,1</td>
+        </tr>
+        
+        <tr>
+            <td>Ocio y cultura</td>
+            <td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Enseñanza</td>
+            <td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Hoteles,...</td>
+            <td>101,065</td>
+            <td>150,38</td>
+            <td>10,275</td>
+            <td>67</td>
+            <td>1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Otros servicios</td>
+            <td>141,055</td>
+            <td>300,38</td>
+            <td>100,275</td>
+            <td>7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+</body>
+</html>

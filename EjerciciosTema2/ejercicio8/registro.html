@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+@font-face {
+            font-family: "MiMenu";
+            src: url("LigatureSymbols-2.11.woff");
+        }
+
+        [class^="icon-"], [class*="icon-"] {
+            margin-right: 3px;
+            font-family: "Mimenu";
+            font-style: normal;
+            font-size: calc(130%);
+            margin-right: 20px;
+        }
+        .icon-usuario::before {
+            content: "\E137";
+        }
+        .icon-contra::before {
+            content: "\E086";
+        }
+        .icon-tlf::before {
+            content: "\E100";
+        }
+        .icon-mail::before {
+            content: "\E08a";
+        }
+
+        .contenedor{
+            background-color: #4c4c4c;
+            width: 25%;
+            margin: 0 auto;
+        }
+        h2{
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            padding-top: 10px;
+        }
+        form{
+            margin-left: 7.5%;
+            margin-right: 7.5%;
+            width: 85%;
+        }
+        .inpt{
+            width: 98%;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        .container{
+            font-size: 15px;
+            color: white;
+        }
+        .boton{
+            width: 40%;
+            background-color: #a4b358;
+            border-radius: 13px;
+            border-style: none;
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            margin-left: 60%;
+        }
+        .boton>a{
+            text-decoration:none; 
+            color: white
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Crear cuenta</h2>
+        <form>
+            
+            <input class="inpt icon-usuario" type="text" id="name" name="name" placeholder="&#xE137; Nombre">
+            <br>
+
+            <input class="inpt icon-tlf" type="text" id="name" name="name" placeholder="&#xE100; Número de teléfono">
+            <br>
+
+            <input class="inpt icon-mail" type="text" id="name" name="name" placeholder="&#xE08a; Correo electrónico">
+            <br>
+
+            <input class="inpt icon-contra" type="text" id="name" name="name" placeholder="&#xE086; Contraseña">
+            <label class="container">
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+                Acepto términos, Condiciones y Politicas de Privacidad
+            </label>
+            <button class="boton"><a href="">Crear cuenta</a></button>
+        </form>
+    </div>
+</body>
+</html>

@@ -40,7 +40,7 @@ body {
 }
 .lista3 {
   border: 1px solid black;
-  width: 7%;
+  width: 9%;
   padding: 10px;
 }
 .lista3 li {
@@ -78,7 +78,7 @@ body {
 .lista5 li{
   display: inline;
   text-decoration: none;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 .lista6 {
   text-align: right;

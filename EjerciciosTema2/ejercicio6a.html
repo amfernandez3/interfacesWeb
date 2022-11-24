@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox ejemplos</title>
+    <style>
+        body{
+            background-color: rgb(57, 54, 54);
+        }
+        #contenedor-flexible>div{
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 20px;
+            margin: 3px;
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            color: rgb(231, 199, 20);
+            font-size: 55px;
+            font-weight: bold;
+            box-shadow: 2px 2px 2px 0px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #contenedor-flexible{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor-flexible">
+        <div class="item-flex">1</div>
+        <div class="item-flex">2</div>
+        <div class="item-flex">3</div>
+        <div class="item-flex">4</div>
+        <div class="item-flex">5</div>
+    </div>
+    
+</body>
+</html>

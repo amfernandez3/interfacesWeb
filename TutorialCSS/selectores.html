@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilosGenerales.css">
+    <style>
+        h3{
+            text-align: center;
+        }
+        p span{
+            font-size: 1.2em;
+        }
+        .tiposSelectores{
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            flex-direction: column;
+            border: 1px solid black;
+            width: 35vw;
+        }
+        .tiposSelectores p{
+            margin: 2px;
+            padding: 10px;
+            border: 1px black solid;
+        }
+        section{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin: 30px;
+        }
+    </style>
+    <title>Selectores</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            
+            <li><a href="./index.html">INICIO</a></li>
+            <li><a href="./modeloCajas.html">MODELO CAJAS</a></li>
+            <li><a href="./flex.html">FLEX</a></li>
+            <li><a href="./selectores.html">SELECTORES</a></li>
+            <li><a href="./medios.html">MEDIOS</a></li>
+            <li><a href="./unidadesMedida.html">MEDIDAS</a></li>
+        </ul>
+    </nav>
+    <h3>Selectores</h3>
+    <p>Los selectores nos permiten focalizar la aplicación de los estilos.</p>
+    <p>Hay varias formas de definirlos:</p> 
+    <section>
+    <div class="tiposSelectores">
+    <p>Por su tipo de elemento : div{estilos}  ó  body{estilos}</p>
+    <p>Varios elementos juntos: body, div{estilos} </p>
+    <p>Un elemento dentro de otro: p span{estilos}
+    Si se quiere restringir el orden de etiquetas: p>span{estilos}</p>
+    <p>Es posible definir estilos para clases: .clasePrueba{estilos}</p>
+    <p>...o para ID's : #idPrueba{estilos}</p>
+    <p>Selectores adyacentes (no hijos): h1+h2{estilos}</p>
+    <p>Pseudo-elementos: :first-child/first-line/first-child/before/after</p>
+    
+    </div>
+    <div id="resumenSelectores">
+        <img src="./assets/selectores.jpg" alt="resumenSelectores">
+    </div>
+</section>
+</body>
+</html>
