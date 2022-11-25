@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+@font-face {
+  font-family: "LigatureSymbols";
+  src: url(../fonts/ligature.woff);
+}
+body {
+  font-family: "Permanent Marker";
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  display: flex;
+  padding: 5px;
+  background-color: #9fd4b5;
+  flex-direction: column;
+  width: 80vw;
+  /*Centrar en pantalla*/
+  margin: 0 auto;
+}
+header {
+  background: url("../imaxes/fondo.jpg");
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+  justify-content: space-around;
+  align-items:center;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 4em;
+  text-shadow: 3px 3px 10px 0px rgb(57, 100, 202);
+}
+section {
+  display: flex;
+  margin-top: 10px;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav {
+  width: 150px;
+  background-color: #3f5448;
+}
+nav > ul {
+  margin: 0px;
+  padding: 0px;
+  flex-direction: row;
+}
+
+nav > ul > li {
+  display: flex;
+  border-bottom: 1px solid black;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #3f5448;
+  color: white;
+  padding: 10px 0px;
+  
+}
+nav > ul > li:hover {
+  background-color: #92e0df;
+  color: #194747;
+  text-shadow: 6px black;
+  font-size: 104%;
+}
+nav>ul>li>a{
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+article {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  grid-auto-flow: dense;
+  flex-grow: 3;
+  border-radius: 10px;
+  background: linear-gradient(#3f5448,#8CBA9F);
+  padding: 20px;
+  gap: 20px;
+}
+
+.grid-item {
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 2px rgb(2, 81, 2);
+
+}
+
+
+aside {
+  display: flex;
+  width: 200px;
+  padding: 6px;
+  background-color: #3f5448;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+aside>form{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+#name, #password{
+  border: 0px;
+  background-color: #9fd4b5;
+  border-radius: 5px;
+  height: 35px;
+  margin-top: 15px;
+  width: 85%;
+}
+#submit{
+  border: 0px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  width: 80%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#submit:hover{
+  box-shadow: 0px 0px 6px rgba(255,255,255,0.664);
+  font-size: 110%;
+}
+
+footer {
+  height: 100px;
+  background-color: #3f5448;
+  color: white;
+  border-radius: 0px 0px 20px 20px;
+  margin-top: 10px;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+
+}
+footer > h3 {
+  color: white;
+}
+footer > h4 {
+  color: white;
+}
+
+[class^="icon-"],
+[class*="icon-"] {
+  font-family: "LigatureSymbols";
+  font-style: normal;
+  margin-right: 5px;
+}
+.icon-fogar::before {
+  content: "\E072";
+}
+
+.icon-galeria:before {
+  content: "\E026";
+}
+
+.icon-normativa::before {
+  content: "\E002";
+}
+
+.icon-equipo::before {
+  content: "\E117";
+}
+
+.icon-guias::before {
+  content: "\E058";
+}
+
+.grid-item:hover{
+  filter: saturate(200%);
+  
+}
+
+@media screen and (max-width: 1024px) {
+  header{
+    font-size: 0.75em;
+
+  }
+  section{
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  flex-direction: column;
+  }
+  nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 80vw;
+  color: white;
+  }
+  nav>a{
+    font-size: 0%;
+  }
+  a::before{
+    font-size: 1.125rem;
+  }
+  nav>ul{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  }
+  nav>ul>li{
+    width: 5vw;
+    margin-right: 15px;
+    border-bottom: 0px;
+  }
+  article{
+    width: 75vw;
+  }
+  aside>form{
+    width: 75vw;
+  }
+  
+}
+
+@media screen and (max-width: 640px) {
+  header{
+    font-size: 0.6em;
+
+  }
+}
+
+@media screen and (max-width: 340px) {
+  body{
+    display: flex;
+    width: 100%;
+
+  }
+  header{
+    font-size: 0.4em;
+
+  }
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.5em;
+    height: fit-content;
+  }
+}
