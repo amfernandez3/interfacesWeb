@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/estilosGenerales.css" />
+    <title>Juego navegador DIW</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li class="dropdown-link">
+            <a href="#">JUEGO ↓</a>
+            <ul class="dropdown">
+              <li><a href="estiloJuego.html">ESTILO DE JUEGO </a></li>
+              <li><a href="batallaTutorial.html">BATALLAS </a></li>
+              <li><a href="gestionRecursosTutorial.html">GESTION DE RECURSOS </a></li>
+              <li><a href="heroesTutorial.html">HEROES </a></li>
+            </ul>
+          </li>
+          <li class="dropdown-link">
+            <a href="personal.html">MEDIA ↓</a>
+            <ul class="dropdown">
+              <li><a href="galeriaImagenes.html">IMAGENES </a></li>
+              <li><a href="personal.html">YOUTUBE </a></li>
+            </ul>
+          </li>
+          <li class="dropdown-link">
+            <a href="index.html">SOCIAL ↓</a>
+            <ul class="dropdown">
+              <li><a href="index.html">FORO </a></li>
+              <li><a href="personal.html">EVENTOS </a></li>
+              <li><a href="changelog.html">CHANGELOG </a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Logo de la página-->
+        <div class="logo">
+          <h1>GALORIA</h1>
+          <img src="../assets/images/icons8-lacayo-50.png" alt="imagenlogo">
+        </div>
+        <!-- Botonera con control de login, idioma y sonido ----------------------------------------------->
+        <div class="botonera">
+          <button onclick="openModal()">JUGAR</button>
+          <button onclick="openModal2()">REGISTRO</button>
+
+          <div id="login-modal" class="modal">
+            <div class="modal-content">
+              <form>
+                <label for="username">Usuario:</label><br />
+                <input type="text" id="username" name="username" /><br />
+                <label for="password">Contraseña:</label><br />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                /><br /><br />
+                <input type="submit" value="Acceder" /><br /><a href="#"
+                  >No recuerdo mis datos</a
+                >
+              </form>
+            </div>
+          </div>
+
+          <div id="login-modal2" class="modal">
+            <div class="modal-content">
+              <form>
+                <label for="username">Usuario:</label><br />
+                <input type="text" id="username" name="username" /><br />
+                <label for="password">Contraseña:</label><br />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                /><br /><br />
+                <label for="password">Confirma contraseña:</label><br />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                /><br /><br />
+                <label for="password">Correo electrónico:</label><br />
+                <input type="email" id="password" name="password" /><br /><br />
+                <input type="submit" value="Acceder" />
+              </form>
+            </div>
+          </div>
+
+          <ul>
+            <li class="dropdown-link">
+              <a href="#"><img src="../assets/images/icons8-spain-48.png" alt="idioma español"></a>
+              <ul class="dropdown">
+                <li><a href="#"><img src="../assets/images/icons8-clipperton-island-48.png" alt="idioma francés"></a></li>
+                <li><a href="#"><img src="../assets/images/icons8-england-48.png" alt="idioma inglés"></a></li>
+                <li><a href="#"><img src="../assets/images/icons8-portugal-48.png" alt="idioma portugués"></a></li>
+              </ul>
+            </li>
+          </ul>
+          <!--Funcion de sonido ambiente-->
+          <script>
+            function openModal() {
+              document.getElementById("login-modal").style.display = "block";
+            }
+            function openModal2() {
+              document.getElementById("login-modal2").style.display = "block";
+            }
+          </script>
+          <audio loop autoplay>
+            <source src="../assets/sounds/THUNDR2.mp3" type="audio/mpeg" />
+            Tu navegador no admite la etiqueta de audio.
+          </audio>
+          <button
+            class="custom-audio-button sound"
+            onclick="document.querySelector('audio').play()"
+          ></button>
+          <button
+            class="custom-pause-button sound"
+            onclick="document.querySelector('audio').pause()"
+          ></button>
+        </div>
+      </nav>
+    </header>
+
+    <!--Section ------------------------------------------------------------------>
+    <section class="container">
+      <div class="fondo">
+        <img
+          src="../assets/images/fondoPuebloTormenta.png"
+          alt="puebloTormenta"
+        />
+    </section>
+    <footer>
+      <ul>
+        <li><a href="index.html">Términos y condiciones</a></li>
+        <li><a href="personal.html">Privacidad</a></li>
+        <li><a href="responsable.html">Responsable</a></li>
+        <p>| © 2022 - 2023 Alemef Games SLU. All rights reserved.</p>
+      </ul>
+    </footer>
+    <script src="../Scripts/funcionLluvia.js"></script>
+    <!-- <script src="../Scripts/textosDesplegables.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        section{
+            align-items: center;
+            display: flex;
+            
+        }
+        .element{ 
+            width: 550px;
+            float: left;
+            background-color: aliceblue;
+            margin: 15px;
+            height: 370px;
+            border-style: solid;
+            border-radius: 10px;
+        }
+        .foto{
+            width: 90%;
+            height: 200px;
+            margin-bottom: 10px;
+            margin:auto;
+            margin-top:22px;
+		    display:block;
+            filter: contrast(0.5);
+        }
+        .titulo{
+            text-align: center;
+            font-size: 24px;
+            width: 90%;
+            margin: auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .parrafo{
+            width: 90%;
+            height: 70px;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+        a{
+            background-color: rgb(46, 45, 45);
+            color: aliceblue;
+            border-radius: 10px;
+            margin: auto;
+            padding-left: 30%;
+            padding-right: 30%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            text-decoration:none;
+            margin-bottom: 10px;
+        }
+        .boton{
+            text-align: center;
+        }
+        @media screen and (max-width: 1024px) {
+        section{
+          flex-direction: column;
+          justify-content: space-around;
+          
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="element">
+            <img class="foto" src="./assetsEjercicio7/plan_naturaleza.jpg">
+            <p class="titulo">Plan naturaleza</p>
+            <p class="parrafo">Si te gusta sentir un contacto intimo con la naturaleza,
+                este plan es para ti. El plan incluye la visita a playas
+                ,montañas y caminatas en los lugares mas paradisiacos del pais.
+            </p>
+            <div class="boton"><a href="">Mas informacion</a></div>
+            
+        </div>
+        <div class="element">
+            <img class="foto" src="./assetsEjercicio7/plan_catedral.jpg">
+            <p class="titulo">Plan catedral</p>
+            <p class="parrafo">Si lo tuyo es el turismo historico, este plan te ofrece un recorrido
+                por las distintas ruinas del país, asi como una visita a los principales
+                museos de guerra del El Salvador.
+            </p>
+            <div class="boton"><a href="">Mas informacion</a></div>
+        </div>
+        <div class="element">
+            <img class="foto" src="./assetsEjercicio7/plan_paraiso.jpg">
+            <p class="titulo">Plan paraíso</p>
+            <p class="parrafo">Si quieres recuperarte del estres de la ciudad este plan podria interesarte.
+                Incluye una visita por los lugares más paradisiacos y tranquilos del país
+            </p>
+            <div class="boton"><a href="">Mas informacion</a></div>
+        </div>
+        
+        
+        
+    </section>
+    
+</body>
+</html>

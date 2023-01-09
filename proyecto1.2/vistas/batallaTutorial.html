@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/estilosEspecificos.css" />
+    <title>Juego navegador DIW</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li class="dropdown-link">
+            <a href="index.html">JUEGO</a>
+          </li>
+          <li class="dropdown-link">
+            <a href="#">MEDIA ↓</a>
+            <ul class="dropdown">
+              <li><a href="galeriaImagenes.html">IMAGENES </a></li>
+              <li><a href="#">YOUTUBE </a></li>
+            </ul>
+          </li>
+          <li class="dropdown-link">
+            <a href="#">SOCIAL ↓</a>
+            <ul class="dropdown">
+              <li><a href="#">FORO </a></li>
+              <li><a href="#">EVENTOS </a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Logo de la página-->
+        <div class="logo">
+          <h1>GALORIA</h1>
+          <img src="../assets/images/icons8-lacayo-50.png" alt="imagenlogo" />
+        </div>
+
+        <!--Funcion de sonido ambiente-->
+        <div class="botoneraSound">
+          <script>
+            function openModal() {
+              document.getElementById("login-modal").style.display = "block";
+            }
+            function openModal2() {
+              document.getElementById("login-modal2").style.display = "block";
+            }
+          </script>
+          <audio loop autoplay>
+            <source src="../assets/sounds/THUNDR2.mp3" type="audio/mpeg" />
+            Tu navegador no admite la etiqueta de audio.
+          </audio>
+          <button
+            class="custom-audio-button sound"
+            onclick="document.querySelector('audio').play()"
+          ></button>
+          <button
+            class="custom-pause-button sound"
+            onclick="document.querySelector('audio').pause()"
+          ></button>
+        </div>
+      </nav>
+    </header>
+
+    <!--Section ------------------------------------------------------------------>
+    <section class="containerSectionBatalla">
+      <div class="contenidoBatalla">
+        <img src="../assets/gameAssets/maps/map1.png" alt="" />
+        <div id="botonBatallaTutorial1">
+          <button id="buttonText">Personaje</button>
+          <p id="text">Elemento principal de control de batallas, interactúa con el entorno.</p>
+        </div>
+        <div id="botonBatallaTutorial2">
+          <button id="buttonText2">Enemigo</button>
+          <p id="text2">Un enemigo, ubicado a x casillas de distancia del personaje.</p>
+        </div>
+        <div id="botonBatallaTutorial3">
+          <button id="buttonText3">Elementos</button>
+          <p id="text3">En el mapa existen elementos que tienen influencia sobre el combate, en este caso, las rocas evitan el paso.</p>
+        </div>
+        <div id="botonBatallaTutorial4">
+            <button id="buttonText4">Acción</button>
+            <p id="text4">La acción se desarrolla por turnos, tanto los personajes del usuario como los rivales tratarán de derrotar al contrario mediante el uso de habilidad y/o objetos.</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------- FOOTER ------------------------------------------->
+    <footer>
+      <ul>
+        <li><a href="terminos.html">Términos y condiciones</a></li>
+        <li><a href="privacidad.html">Privacidad</a></li>
+        <li><a href="responsable.html">Responsable</a></li>
+        <p>| © 2022 - 2023 Alemef Games SLU. All rights reserved.</p>
+      </ul>
+    </footer>
+    <script src="../Scripts/textosDesplegables.js"></script>
+  </body>
+</html>

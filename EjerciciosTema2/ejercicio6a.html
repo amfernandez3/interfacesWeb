@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,13 @@
     <style>
         body{
             background-color: rgb(57, 54, 54);
+            margin-top: 15px;
         }
-        #contenedor-flexible>div{
+        div{
+            
+            margin-top: 15px;
+        }
+        div>div{
             font-family: Arial, Helvetica, sans-serif;
             border-radius: 20px;
             margin: 3px;
@@ -25,8 +30,90 @@
             align-items: center;
         }
         #contenedor-flexible{
+            border: 1px solid white;
             display: flex;
             flex-direction: row;
+        }
+        #contenedor-flexible2{
+            display: flex;
+            flex-direction: row-reverse;
+            border: 1px solid white;
+        }
+        #contenedor-flexible3{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border: 1px solid white;
+        }
+        #contenedor-flexible4{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 1px solid white;
+        }
+        
+        #contenedor-flexible5{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid white;
+        }
+        #contenedor-flexible6{
+            display: flex;
+            flex-direction: column-reverse;
+            border: 1px solid white;
+
+            
+        }
+        #contenedor-flexible7{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 1px solid white;
+            
+        }
+        #contenedor-flexible8{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            border: 1px solid white;
+            
+        }
+        .item-flex-Strech{
+            /*Cambio altura para visualizar Stretch*/
+            height: 200px;
+            align-items: unset;
+        }
+        #contenedor-flexible9{
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            border: 1px solid white;
+            line-height: 100px;
+            
+        }
+        #contenedor-flexible10{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            border: 1px solid white;
+            height: 300px;
+            
+        }
+        #contenedor-flexible11{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid white;
+            height: 300px;
+            
+        }
+        #contenedor-flexible12{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 1px solid white;
+            height: 600px;
+            
         }
     </style>
 </head>
@@ -38,6 +125,102 @@
         <div class="item-flex">4</div>
         <div class="item-flex">5</div>
     </div>
-    
+    <div id="contenedor-flexible2">
+        <div class="item-flex">1</div>
+        <div class="item-flex">2</div>
+        <div class="item-flex">3</div>
+        <div class="item-flex">4</div>
+        <div class="item-flex">5</div>
+    </div>
+    <div id="contenedor-flexible3">
+        <div class="item-flex">1</div>
+        <div class="item-flex">2</div>
+        <div class="item-flex">3</div>
+        <div class="item-flex">4</div>
+    </div>
+    <div id="contenedor-flexible4">
+        <div class="item-flex">1</div>
+        <div class="item-flex">2</div>
+        <div class="item-flex">3</div>
+        <div class="item-flex">4</div>
+    </div>
+    <div id="contenedor-flexible5">
+        <div class="item-flex">1</div>
+        <div class="item-flex">2</div>
+        <div class="item-flex">3</div>
+        <div class="item-flex">4</div>
+        <div class="item-flex">5</div>
+    </div>
+    <div id="contenedor-flexible6">
+        <div class="item-flex">1</div>
+        <div class="item-flex">2</div>
+        <div class="item-flex">3</div>
+        <div class="item-flex">4</div>
+        <div class="item-flex">5</div>
+    </div>
+    <div id="contenedor-flexible7">
+        <div class="item-flex">1</div>
+        <div class="item-flex">2</div>
+        <div class="item-flex">3</div>
+        <div class="item-flex">4</div>
+        <div class="item-flex">5</div>
+        <div class="item-flex">6</div>
+        <div class="item-flex">7</div>
+        <div class="item-flex">8</div>
+        <div class="item-flex">9</div>
+        <div class="item-flex">10</div>
+    </div>
+    <div id="contenedor-flexible8">
+        <div class="item-flex">1</div>
+        <div class="item-flex">2</div>
+        <div class="item-flex">3</div>
+        <div class="item-flex">4</div>
+        <div class="item-flex">5</div>
+        <div class="item-flex">6</div>
+        <div class="item-flex">7</div>
+        <div class="item-flex">8</div>
+        <div class="item-flex">9</div>
+        <div class="item-flex">10</div>
+    </div>
+    <div id="contenedor-flexible9">
+        <div class="item-flex-Strech">1</div>
+        <div class="item-flex-Strech">2</div>
+        <div class="item-flex-Strech">3</div>
+        <div class="item-flex-Strech">4</div>
+    </div>
+    <div id="contenedor-flexible10">
+        <div class="item-flex">1</div>
+        <div class="item-flex">2</div>
+        <div class="item-flex">3</div>
+        <div class="item-flex">4</div>
+    </div>
+    <div id="contenedor-flexible11">
+        <div class="item-flex">1</div>
+        <div class="item-flex">2</div>
+        <div class="item-flex">3</div>
+        <div class="item-flex">4</div>
+    </div>
+    <div id="contenedor-flexible12">
+        <div class="item-flex">1</div>
+        <div class="item-flex">2</div>
+        <div class="item-flex">3</div>
+        <div class="item-flex">4</div>
+        <div class="item-flex">5</div>
+        <div class="item-flex">6</div>
+        <div class="item-flex">7</div>
+        <div class="item-flex">8</div>
+        <div class="item-flex">9</div>
+        <div class="item-flex">10</div>
+        <div class="item-flex">11</div>
+        <div class="item-flex">12</div>
+        <div class="item-flex">13</div>
+        <div class="item-flex">14</div>
+        <div class="item-flex">15</div>
+        <div class="item-flex">16</div>
+        <div class="item-flex">17</div>
+        <div class="item-flex">18</div>
+        <div class="item-flex">19</div>
+        <div class="item-flex">20</div>
+    </div>
 </body>
 </html>

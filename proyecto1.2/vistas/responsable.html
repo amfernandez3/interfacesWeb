@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/estilosEspecificos.css" />
+    <title>Juego navegador DIW</title>
+  </head>
+  <body>
+    <header>
+      <!-----------------------------------------Menú de navegación de zona secundaria --------------------------------------->
+      <nav>
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li class="dropdown-link">
+            <a href="index.html">JUEGO ↓</a>
+            <ul class="dropdown">
+              <li><a href="index.html">ESTILO DE JUEGO </a></li>
+              <li><a href="personal.html">BATALLAS </a></li>
+              <li><a href="gestionRecursosTutorial.html">GESTION DE RECURSOS </a></li>
+              <li><a href="personal.html">HEROES </a></li>
+            </ul>
+          </li>
+          <li class="dropdown-link">
+            <a href="personal.html">MEDIA ↓</a>
+            <ul class="dropdown">
+              <li><a href="galeriaImagenes.html">IMAGENES </a></li>
+              <li><a href="personal.html">YOUTUBE </a></li>
+            </ul>
+          </li>
+          <li class="dropdown-link">
+            <a href="index.html">SOCIAL ↓</a>
+            <ul class="dropdown">
+              <li><a href="index.html">FORO </a></li>
+              <li><a href="personal.html">EVENTOS </a></li>
+              <li><a href="changelog.html">CHANGELOG </a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Logo de la página-->
+        <div class="logo">
+          <h1>GALORIA</h1>
+          <img src="../assets/images/icons8-lacayo-50.png" alt="imagenlogo">
+        </div>
+
+          <!--Funcion de sonido ambiente-->
+          <div class="botoneraSound">
+          <script>
+            function openModal() {
+              document.getElementById("login-modal").style.display = "block";
+            }
+            function openModal2() {
+              document.getElementById("login-modal2").style.display = "block";
+            }
+          </script>
+          <audio loop autoplay>
+            <source src="../assets/sounds/THUNDR2.mp3" type="audio/mpeg" />
+            Tu navegador no admite la etiqueta de audio.
+          </audio>
+          <button
+            class="custom-audio-button sound"
+            onclick="document.querySelector('audio').play()"
+          ></button>
+          <button
+            class="custom-pause-button sound"
+            onclick="document.querySelector('audio').pause()"
+          ></button>
+        </div>
+      </nav>
+    </header>
+
+    <!--Section ------------------------------------------------------------------>
+    <section class="containerSection">
+      <div class="contenidoTexto">
+        <h2>Responsable:</h2>
+        <p>Alejandro Meno Fernández - "CIFP a Carballeira Marcos Valcárcel"</p>
+      </br>
+      <h2>Agradecimientos y méritos:</h2>
+      <ul>
+        <li>Imágenes del proyecto generadas por IA : <a href="https://openai.com/dall-e-2/">DALL-E 2</a></li>
+        <li>Asistencia y soporte de código por IA : <a href="https://chat.openai.com/chat">chat GPT</a></li>
+        <li>Resolución de errores : <a href="https://stackoverflow.com">StackOverFlow</a></li>
+        <li>Repositorio de fuentes : <a href="https://dafont.com">Dafont</a></li>
+        <li>Repositorio de iconos : <a href="https://iconos8.es">iconos8</a></li>
+        <li>Funciones web 1 (lluvia) : <a href="https://github.com/mubaidr/rainyday.js">Github</a></li>
+        <li>Recursos gráficos OpenSource : <a href="https://opengameart.org/">OpenGameArt</a></li>
+        
+      </ul>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="terminos.html">Términos y condiciones</a></li>
+        <li><a href="privacidad.html">Privacidad</a></li>
+        <li><a href="responsable.html">Responsable</a></li>
+        <p>| © 2022 - 2023 Alemef Games SLU. All rights reserved.</p>
+      </ul>
+    
+    </footer>
+ 
+  </body>
+</html>

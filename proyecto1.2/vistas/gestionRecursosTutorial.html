@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/estilosEspecificos.css" />
+    <title>Juego navegador DIW</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          
+          <li><a href="index.html">INICIO</a></li>
+          <li class="dropdown-link">
+            <a href="index.html">JUEGO ↓</a>
+            <ul class="dropdown">
+              <li><a href="index.html">ESTILO DE JUEGO </a></li>
+              <li><a href="personal.html">BATALLAS </a></li>
+              <li><a href="personal.html">GESTION DE RECURSOS </a></li>
+              <li><a href="heroesTutorial.html">HEROES </a></li>
+            </ul>
+          </li>
+          <li class="dropdown-link">
+            <a href="personal.html">MEDIA ↓</a>
+            <ul class="dropdown">
+              <li><a href="galeriaImagenes.html">IMAGENES </a></li>
+              <li><a href="personal.html">YOUTUBE </a></li>
+            </ul>
+          </li>
+          <li class="dropdown-link">
+            <a href="index.html">SOCIAL ↓</a>
+            <ul class="dropdown">
+              <li><a href="index.html">FORO </a></li>
+              <li><a href="personal.html">EVENTOS </a></li>
+              <li><a href="changelog.html">CHANGELOG </a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Logo de la página-->
+        <div class="logo">
+          <h1>GALORIA</h1>
+          <img src="../assets/images/icons8-lacayo-50.png" alt="imagenlogo">
+        </div>
+
+          <!--Funcion de sonido ambiente-->
+          <div class="botoneraSound">
+          <script>
+            function openModal() {
+              document.getElementById("login-modal").style.display = "block";
+            }
+            function openModal2() {
+              document.getElementById("login-modal2").style.display = "block";
+            }
+          </script>
+          <audio loop autoplay>
+            <source src="../assets/sounds/THUNDR2.mp3" type="audio/mpeg" />
+            Tu navegador no admite la etiqueta de audio.
+          </audio>
+          <button
+            class="custom-audio-button sound"
+            onclick="document.querySelector('audio').play()"
+          ></button>
+          <button
+            class="custom-pause-button sound"
+            onclick="document.querySelector('audio').pause()"
+          ></button>
+        </div>
+      </nav>
+    </header>
+
+    <!--Section ------------------------------------------------------------------>
+    <section class="containerSection">
+      <div class="contenidoRecursosTutorial">
+        <h2>Gestión de recursos:</h2>
+        <p>En Galoria tendrás que conseguir y administrar una serie de recursos básicos:</p>
+        <div class="recursoTutorial">
+          <p>- El principal elemento es la comida, esta te permitirá mantener a un grupo de personas.</br>
+          Se obtiene principamente de los cultivos y frutales.</p>
+          <img src="../assets/gameAssets/gameImages/apple.png" alt="apple">
+        </div>
+        <div class="recursoTutorial">
+        <p>- Otro elemento básico es el agua potable, es importante construir rápidamente un pozo que permita su extracción.</p>
+        <img src="../assets/gameAssets/gameImages/Well_00000.png" alt="molino">
+      </div>
+      <div class="recursoTutorial">
+        <p>- La madera, el sustento de construcciones y herramientas, es vital para el crecimiento y el desarrollo.</p>
+        <img src="../assets/gameAssets/gameImages/wood.png" alt="wood">
+      </div>
+      
+      <div class="recursoTutorial">
+        <p>- Y el oro, los preciados metales, la moneda de cambio entre supervivientes, reúne tanto como puedas y protégelo.</p>
+        <img src="../assets/gameAssets/gameImages/coin.png" alt="coin">
+      </div>
+      </br>
+     
+      
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------- FOOTER ------------------------------------------->
+    <footer>
+      <ul>
+        <li><a href="terminos.html">Términos y condiciones</a></li>
+        <li><a href="privacidad.html">Privacidad</a></li>
+        <li><a href="responsable.html">Responsable</a></li>
+        <p>| © 2022 - 2023 Alemef Games SLU. All rights reserved.</p>
+      </ul>
+    
+    </footer>
+ 
+  </body>
+</html>
