@@ -1,12 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <title></title>
+  <title>Mis libros "bookStore"</title>
   <link rel="stylesheet" type="text/css" href="estilos.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="estilos2.css" media="all" />
 
 <script type="text/javascript">
 function showhide(control, elem){
@@ -50,8 +51,7 @@ function showhide(control, elem){
 <strong>Paso:</strong><img src="img/1.png" alt="" /><img src="img/2on.png" alt="" width="63" height="42" /><img src="img/3.png" alt="" width="85" height="42" /></div>
 
 <div id="imprimir">
-  <a href="javascript:print()" ><img src="img/iconPrint.gif" width="20" alt="Imprimir" /></a>
-  <a href="javascript:print()">Imprimir</a>
+  <a href="javascript:print()" ><img src="img/iconPrint.gif" width="20" alt="botóndeimpresión" />Imprimir</a>
 </div>
 
 <div id="ayuda">
@@ -86,7 +86,7 @@ function showhide(control, elem){
 	    <p>Editorial Alfaguara: Madrid, 1995.</p>
 	    <p>ISBN: 978-84-20430-22-5 	</p></td>
     <td>13,45 &euro;</td>
-    <td><input type="text" id="a_uds" name="a_uds" value="1" size="4" /></td>
+    <td><label for="a_uds">Unidades </label><input type="text" id="a_uds" name="a_uds" value="1" size="4" /></td>
     <td>13,45 &euro;</td>
   </tr>
   <tr class="producto">	
@@ -97,7 +97,7 @@ function showhide(control, elem){
 	    <p>ISBN 978-84-96388-56-7</p>
 	 </td>
      <td>15,00 &euro;</td>
-    <td><input type="text" id="b_uds" name="b_uds" value="1" size="4" /></td>
+    <td><label for="b_uds">Unidades </label><input type="text" id="b_uds" name="b_uds" value="1" size="4" /></td>
     <td>15,00 &euro;</td>
   </tr>
   <tr class="producto">	
@@ -107,7 +107,7 @@ function showhide(control, elem){
 	  <p>OQO Editora: Pontevedra, 2007.</p>
 	  <p>ISBN: 978-84-96788-37-4  </p></td>
     <td>12,50 &euro;</td>
-    <td><input type="text" id="c_uds" name="c_uds" value="2" size="4" /></td>
+    <td><label for="c_uds">Unidades </label><input type="text" id="c_uds" name="c_uds" value="2" size="4" /></td>
     <td>25,00 &euro;</td>
   </tr>
   <tr id="total">	
@@ -147,13 +147,13 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label>Empresa </label>
+        <label for="empresa">Empresa </label>
         <input type="text" id="empresa" name="empresa" />
       </div>
     </td>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Dirección </label>
+        <label class="obligatorio" for="dir">Dirección </label>
         <input type="text" id="dir" name="dir" />
       </div>
     </td>
@@ -161,13 +161,13 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Nombre </label>
+        <label class="obligatorio" for="nombre">Nombre </label>
         <input type="text" id="nombre" name="nombre" />
       </div>
     </td>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Localidad </label>
+        <label class="obligatorio" for="localidad">Localidad </label>
         <input type="text" id="localidad" name="localidad" />
       </div>
     </td>
@@ -175,13 +175,13 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Apellidos </label>
+        <label class="obligatorio" for="apellidos">Apellidos </label>
         <input type="text" id="apellidos" name="apellidos" />
       </div>
     </td>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Provincia </label>
+        <label class="obligatorio" for="provincia">Provincia </label>
         <input type="text" id="provincia" name="provincia" />
       </div>
     </td>
@@ -189,13 +189,13 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">e-mail </label>
+        <label class="obligatorio" for="email">e-mail </label>
         <input type="text" id="email" name="email" />
       </div>
     </td>
     <td>
-    	<div class="campo_form">
-        <label class="obligatorio">CP </label>
+    	<div class="campo_form" for="cp">
+        <label class="obligatorio" for="cp">CP </label>
         <input type="text" id="cp" name="cp" />
       </div>
     </td>
@@ -203,14 +203,14 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Tlf. de contacto </label>
+        <label class="obligatorio" for="tlf">Tlf. de contacto </label>
         <input type="text" id="tlf" name="tlf" />
       </div>
     </td>
     <td>
       <div class="campo_form">
-        <label>Horario de entrega </label>
-        <select name="horario">    
+        <label for="horario">Horario de entrega </label>
+        <select name="horario" id="horario">    
         	 <option value="all">Todo el día</option>    
         	 <option value="a">De 9:00 a 14:00 horas</option>      
         	 <option value="b">De 14:00 a 19:00 horas</option>      
@@ -221,7 +221,7 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label>NIF/CIF </label>
+        <label for="nif">NIF/CIF </label>
         <input type="text" id="nif" name="nif" />
       </div>
     </td>
@@ -235,7 +235,7 @@ function showhide(control, elem){
   </div>
 
   <div>
-    <label>¿Desea recibir información sobre nuestras promociones?</label>
+    <label for="info_promociones">¿Desea recibir información sobre nuestras promociones?</label>
     <select id="info_promociones" name="info_promociones" onchange="showhide(this, document.getElementById('lista_promociones'))">        	    
       <option value="si" selected="selected">SI</option>      
       <option value="no">NO</option>      
@@ -247,45 +247,45 @@ function showhide(control, elem){
 
     <div class="grupo_check">
       <div>
-        <input type="checkbox" name="prom" id="prom" value="hispanoamericana">
-        <label>Literatura hispano americana </label>
+        <input type="checkbox" name="hispanoamericana" id="hispanoamericana" value="hispanoamericana">
+        <label for="hispanoamericana">Literatura hispano americana </label>
       </div>
       <div>
-        <input type="checkbox" name="prom" id="prom" value="extranjera">
-        <label>Literatura extanjera </label>
+        <input type="checkbox" name="extranjera" id="extranjera" value="extranjera">
+        <label for="extranjera">Literatura extanjera </label>
       </div>
       <div>
-        <input type="checkbox" name="prom" id="prom" value="clasicosespannoles">
-        <label>Clásicos españoles</label> </div>
+        <input type="checkbox" name="clasicosespannoles" id="clasicosespannoles" value="clasicosespannoles">
+        <label for="clasicosespannoles">Clásicos españoles</label> </div>
     </div>
 
     <div class="grupo_check">
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="clasicosmundiales">
-        <label>Clásicos mundiales </label>
+        <input type="checkbox" name="clasicosmundiales"  id="clasicosmundiales" value="clasicosmundiales">
+        <label for="clasicosmundiales">Clásicos mundiales </label>
       </div>
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="biografia">
-        <label>Biografía</label>
+        <input type="checkbox" name="biografia"  id="biografia" value="biografia">
+        <label for="biografia">Biografía</label>
       </div>
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="comic"> 
-        <label>Cómic y novela gráfica </label>
+        <input type="checkbox" name="comic"  id="comic" value="comic"> 
+        <label for="comic">Cómic y novela gráfica </label>
       </div>
     </div>
 
     <div class="grupo_check">
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="infantil">
-        <label>Literatura infantil </label>
+        <input type="checkbox" name="infantil"  id="infantil" value="infantil">
+        <label for="infantil">Literatura infantil </label>
       </div>
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="juvenil">
-        <label>Literatura juvenil </label>
+        <input type="checkbox" name="juvenil"  id="juvenil" value="juvenil">
+        <label for="juvenil">Literatura juvenil </label>
       </div>
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="tecnico">
-        L<label>ibro técnico</label> </div>
+        <input type="checkbox" name="tecnico"  id="tecnico" value="tecnico">
+        L<label for="tecnico">ibro técnico</label> </div>
     </div>
 
   </div>
@@ -293,6 +293,7 @@ function showhide(control, elem){
   <div id="div_captcha">
     Escriba los siguientes caracteres: 
     <img src="img/Captcha-ejemplo.jpg" alt="" width="78" height="32" />
+    <label for="captcha">realizarpedido</label>
     <input type="text" id="captcha" size="5" onblur="document.forms[0].submit()" />
   </div>
 
@@ -319,10 +320,12 @@ function showhide(control, elem){
 
   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin condimentum, diam in porta ullamcorper, ipsum nisi venenatis dui, quis convallis purus lectus vel magna. Morbi consectetuer odio sed nibh. Sed turpis sapien, ultrices ac, condimentum eu, imperdiet sed, pede. Suspendisse potenti. Sed elit risus, accumsan eget, accumsan non, placerat ac, massa. Vivamus egestas, leo eget nonummy consectetuer, mi enim imperdiet lorem, ut rhoncus ligula diam at nisi. Morbi porta malesuada lorem. Donec euismod nunc venenatis purus. In cursus sagittis ipsum. Sed dapibus fermentum dolor. Quisque in lacus sit amet turpis adipiscing tristique. Aliquam elit. Mauris sit amet magna. Nulla id mi. Duis dui augue, porttitor id, pellentesque in, venenatis dapibus, ligula. </p>
 
-  <p class="lista">1. Nullam ut ante nec dolor aliquam auctor.<br />
-  2. Aenean ultrices elit id felis.<br />
-  3. Maecenas nec erat eget eros malesuada nonummy. <br />
-  4. Nulla facilisi. </p>
+  <p class="lista">
+  
+  <li>1. Nullam ut ante nec dolor aliquam auctor.<br /></li>
+  <li>2. Aenean ultrices elit id felis.<br /></li>
+  <li>3. Maecenas nec erat eget eros malesuada nonummy. <br /></li>
+  <li>4. Nulla facilisi. </p></li>
 
   <p>Donec congue. Donec dictum nisi eget nisl. Aenean sed arcu et tortor laoreet rhoncus. Mauris vulputate. Morbi pellentesque, nisi eget vestibulum luctus, enim mi iaculis risus, sit amet facilisis purus nulla quis elit. Sed velit turpis, eleifend in, ultricies non, egestas vulputate, urna. Ut ut tellus et metus auctor hendrerit. Aliquam in turpis. Aliquam rutrum mollis nulla. Sed quis pede. Quisque a massa. Quisque feugiat urna a metus. Nulla urna. Cras diam est, scelerisque ut, rutrum quis, luctus a, dolor.</p>
 
