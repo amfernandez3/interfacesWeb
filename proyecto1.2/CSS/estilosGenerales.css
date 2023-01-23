@@ -4,7 +4,7 @@ body{
 }
 
 /*------------------------------------------------Keyframes ---------------------------------------------*/
-/*keyframe para representar el efecto de lluvia*/
+/*keyframe para representar el efecto de vapor + lluvia*/
 @keyframes vapour {
   0%, 100% {
       backdrop-filter: blur(0);
@@ -19,7 +19,7 @@ body{
     top: -10px;
   }
   100%{
-    top: 139vh;
+    top: 100vh;
   }
 }
 

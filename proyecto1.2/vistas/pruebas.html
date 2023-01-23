@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/estilosGenerales.css" />
+    <link rel="stylesheet" href="../CSS/estilosPruebas.css" />
     <title>Juego navegador DIW</title>
   </head>
   <body>
@@ -124,15 +124,15 @@
         </div>
       </nav>
     </header>
-
     <!--Section ------------------------------------------------------------------>
+    <script src="../Scripts/generarTablero.js"></script>
     <section class="container">
-      <div class="fondo">
-        <img
-          src="../assets/images/fondoPuebloTormenta.png"
-          alt="puebloTormenta"
-        />
+      <div class="fondoPruebas">
+        <div><button onclick="generartablero()">GenerarTablero</button></div>
+        <div id="cuadros"></div>
     </section>
+
+    <!---->
     <footer>
       <ul>
         <li><a href="#">Términos y condiciones</a></li>
@@ -141,7 +141,8 @@
         <p>| © 2022 - 2023 Alemef Games SLU. All rights reserved.</p>
       </ul>
     </footer>
-    <script src="../Scripts/funcionLluvia.js"></script>
+    
+    <!--<script src="../Scripts/funcionLluvia.js"></script>-->
     <!-- <script src="../Scripts/textosDesplegables.js"></script> -->
   </body>
 </html>
