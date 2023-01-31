@@ -315,14 +315,34 @@ body{
       cursor: pointer;
     }
 
-    /*- Estilos creación tablas*/
+    /*--------------------------------------------- Estilos creación tablas----------------------------------------*/
 
 .fondoPruebas{
     margin: 10px;
     padding: 10px;
     margin-left: 440px;
+    padding-bottom: 20px;
 }
-#cuadros {
+
+#cuadricula{
+}
+.cuadrosPares {
     overflow:hidden;
+    border:solid 1px;
+    background-color:rgb(168, 189, 168);
+    float:left;
+}
+
+.cuadrosImpares {
+  overflow:hidden;
+  border:solid 1px;
+  background-color:rgb(165, 176, 165);
+  float:left;
+}
+
+#cuadro3{
+  background-image: url(../assets/gameAssets/gameImages/rogue.svg);
+  background-size: 75%;
+  background-repeat: no-repeat;
 }
     
