@@ -2,6 +2,10 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Times New Roman', Times, serif;
+
+}
+h1,h2,h3,a,p{
+    padding: 5px;
 }
 header{
     border: 1px solid black;
@@ -60,4 +64,7 @@ article img{
 }
 footer{
     border: 1px solid black;
+}
+svg{
+    margin-top: 10px;
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo-p1ud5-alejandro.css">
+    <link rel="icon" type="image/jpg" href="./assets/images/html5.png"/>
     <title>Document</title>
 </head>
 <body>
@@ -36,10 +37,16 @@
         <article>
             <p>Escala la ventana para ver los cambios: </p>
             <picture>
-                <source srcset="./assets/images/paisaje800x719-300ppp" media="(max-width: 800px)">
-                <source srcset="./assets/images/paisaje400x359-300ppp" media="(max-width: 400px)">
-                <img src="./assets/images/paisaje2448x2201-300ppp.jpg" alt="imagen principal"> <!-- imagen principal -->
-            </picture>
+                <source srcset="./assets/images/paisaje400x359-300ppp.jpg 120w,
+                                ./assets/images/paisaje800x719-300ppp.jpg 193w,
+                                ./assets/images/paisaje200x179-300ppp.jpg 378w"
+                        sizes="(max-width: 710px) 120px,
+                               (max-width: 991px) 193px,
+                               378px">
+                
+                <img src="./assets/images/paisaje2448x2201-300ppp.jpg" alt="paisaje2448x2201-300ppp">
+              </picture>
+              
         </article>
     </section>
     <footer>
