@@ -59,13 +59,13 @@
             Tu navegador no admite la etiqueta de audio.
           </audio>
           <button
-            class="custom-audio-button sound"
-            onclick="document.querySelector('audio').play()"
-          ></button>
-          <button
-            class="custom-pause-button sound"
-            onclick="document.querySelector('audio').pause()"
-          ></button>
+          class="custom-audio-button sound"
+          onclick="document.querySelector('audio').play()" aria-label="AUDIO-ON"
+        ></button>
+        <button
+          class="custom-pause-button sound"
+          onclick="document.querySelector('audio').pause()" aria-label="AUDIO-OFF"
+        ></button>
         </div>
       </nav>
     </header>
