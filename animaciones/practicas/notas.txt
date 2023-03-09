@@ -20,7 +20,7 @@ Pueden ser con animation o transition (no requiere trigger/disparador)
 }
 
 @keyframe cambiarColor{
-    form{//or 0%
+    for{//or 0%
         background-color:crimson;
     }
 
